@@ -1,7 +1,18 @@
 Witness Angel Status Information
 ##################################
 
+You can now download the **first demo release** of the Witness Angel android application.
 
+https://github.com/WitnessAngel/witness-angel-client/releases/tag/Release0.1a
+
+.. BROKEN ON GITHUB `English <english_announcement_>`_ and `French <french_announcement_>`_ announcements and manuels for this releases are available below.
+
+English/French announcements and manuels for this releases are available below.
+
+-----
+
+
+.. _english_announcement:
 
 [EN] The demo application for Android is out!
 ======================================================
@@ -14,7 +25,7 @@ This "proof of concept" aims to show how the system works, and to evaluate the p
 
 In the long term, the application will of course be translated into other languages, get a dedicated design, be ported to other platforms, and equipped with many more features!
 
-Discover below the user manual, with screenshots.
+Discover below the user manual, with screenshots. App download link is at the top of this page.
 
 
 .. list-table::
@@ -95,6 +106,7 @@ Discover below the user manual, with screenshots.
 
 -------
 
+.. _french_announcement:
 
 [FR] L'application de démo pour Android est sortie !
 ======================================================
@@ -107,7 +119,7 @@ Cette "preuve de concept" a pour but de montrer le fonctionnement du système, e
 
 À terme, l'application sera bien sûr traduite dans d'autres langues, dotée d'une charte graphique dédiée, portée sur d'autres plateformes, et équipée de bien plus de fonctionnalités !
 
-Découvrez ci-dessous le manuel de l'utilisateur, avec captures d'écran.
+Découvrez ci-dessous le manuel de l'utilisateur, avec captures d'écran. Le lien de téléchargement de l'application est en haut de cette page.
 
 
 .. list-table::
