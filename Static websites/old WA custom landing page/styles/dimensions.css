@@ -1,0 +1,86 @@
+/* =========================================================================
+ * DIMENSIONS
+ * ========================================================================= */
+
+/* DOM
+ * ------------------------------------------------------------------------- */
+
+:root {
+  --dom--min-width: 540px;
+  --dom--breakpoint--mobile: 768px;
+  --dom--breakpoint--tablet: 769px;
+  --dom--breakpoint--desktop: 1024px;
+  --dom--breakpoint--widescreen: 1216px;
+  --dom--breakpoint--fullhd: 1408px;
+}
+
+/* GRID
+ * ------------------------------------------------------------------------- */
+
+:root {
+  --grid--expansion-limited-column--max-width: 1224px;
+}
+
+/* OFFSETS
+ * ------------------------------------------------------------------------- */
+
+:root {
+  --offset--x-small: 5px;
+  --offset--small: 10px;
+  --offset--medium: 20px;
+  --offset--large: 40px;
+  --offset--x-large: 80px;
+}
+
+/* BORDERS
+ * ------------------------------------------------------------------------- */
+
+:root {
+  /* WIDTH */
+  --border--width--small: 1px;
+  --border--width--medium: 2px;
+  --border--width--large: 4px;
+
+  /* RADIUS */
+  --border--radius--small: 5px;
+  --border--radius--medium: 10px;
+  --border--radius--large: 20px;
+}
+
+/* FONTS
+ * ------------------------------------------------------------------------- */
+
+:root {
+  --font--size--down-scaled-6: 0.4em;
+  --font--size--down-scaled-5: 0.5em;
+  --font--size--down-scaled-4: 0.6em;
+  --font--size--down-scaled-3: 0.7em;
+  --font--size--down-scaled-2: 0.8em;
+  --font--size--down-scaled-1: 0.9em;
+  --font--size--standard: 1em;
+  --font--size--up-scaled-1: 1.1em;
+  --font--size--up-scaled-2: 1.2em;
+  --font--size--up-scaled-3: 1.4em;
+  --font--size--up-scaled-4: 1.6em;
+  --font--size--up-scaled-5: 1.8em;
+  --font--size--up-scaled-6: 2em;
+  --font--size--up-scaled-7: 2.2em;
+  --font--size--up-scaled-8: 2.6em;
+  --font--size--up-scaled-9: 3em;
+}
+
+/* DROPDOWN MENUS
+ * ------------------------------------------------------------------------- */
+
+:root {
+  --dropdown-menu--width: 160px;
+}
+
+/* PICTOGRAMS
+ * ------------------------------------------------------------------------- */
+
+:root {
+  --picto--width--small: 16px;
+  --picto--width--medium: 24px;
+  --picto--width--large: 32px;
+}

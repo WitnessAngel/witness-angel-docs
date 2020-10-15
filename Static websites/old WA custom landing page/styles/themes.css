@@ -1,0 +1,44 @@
+/* =========================================================================
+ * THEMES
+ * ========================================================================= */
+
+/* BASIC COLORS
+ * ------------------------------------------------------------------------- */
+
+:root {
+  /* WHITE */
+  --color--white: rgb(255, 255, 255);
+  --color--dark-white: rgb(240, 240, 240);
+
+  /* GREY */
+  --color--x-lite-grey: rgb(217, 217, 217);
+  --color--lite-grey: rgb(189, 189, 189);
+  --color--grey: rgb(150, 150, 150);
+  --color--dark-grey: rgb(115, 115, 115);
+  --color--x-dark-grey: rgb(82, 82, 82);
+
+  /* BLACK */
+  --color--lite-black: rgb(37, 37, 37);
+  --color--black: rgb(0, 0, 0);
+}
+
+/* APP COLORS
+ * ------------------------------------------------------------------------- */
+
+:root {
+  /* THEME */
+  --color--theme--main: rgb(45, 87, 160);
+  --color--theme--secondary: rgb(11, 254, 206);
+  --color--theme--tertiary: rgb(209, 236, 241);
+  --color--theme--quaternary: rgb(38, 73, 129);
+
+  /* LOGIN STATUS */
+  --color--offline: $lite-grey;
+  --color--online: #4fc031;
+
+  /* NOTIFICATION */
+  --color--error: red;
+  --color--info: var(--x-lite-grey);
+  --color--success: green;
+  --color--warning: yellow;
+}

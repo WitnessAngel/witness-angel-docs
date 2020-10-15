@@ -1,0 +1,23 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#0afcca" id="svg_1" d="m39,7c0,-3.309 -2.691,-6 -6,-6l-26,0c-3.309,0 -6,2.691 -6,6c0,2.967 2.167,5.431 5,5.91l0,30.09c0,3.309 2.691,6 6,6l31,0c3.309,0 6,-2.691 6,-6l0,-1l-10,0l0,-35zm-36,0c0,-2.206 1.794,-4 4,-4l21.54,0c-0.954,1.063 -1.54,2.462 -1.54,4s0.586,2.937 1.54,4l-21.54,0c-2.206,0 -4,-1.794 -4,-4zm5,36l0,-30l25,0l0,-2c-2.206,0 -4,-1.794 -4,-4s1.794,-4 4,-4s4,1.794 4,4l0,35l0,1c0,1.538 0.586,2.937 1.54,4l-26.54,0c-2.206,0 -4,-1.794 -4,-4zm38.873,1c-0.444,1.723 -2.013,3 -3.873,3s-3.429,-1.277 -3.873,-3l7.746,0z"/>
+  <rect fill="#0afcca" id="svg_2" y="17" x="12" width="4" height="2"/>
+  <rect fill="#0afcca" id="svg_3" y="17" x="19" width="14" height="2"/>
+  <rect fill="#0afcca" id="svg_4" y="22" x="12" width="4" height="2"/>
+  <rect fill="#0afcca" id="svg_5" y="22" x="19" width="14" height="2"/>
+  <rect fill="#0afcca" id="svg_6" y="27" x="12" width="4" height="2"/>
+  <rect fill="#0afcca" id="svg_7" y="27" x="19" width="14" height="2"/>
+  <rect fill="#0afcca" id="svg_8" y="32" x="12" width="4" height="2"/>
+  <rect fill="#0afcca" id="svg_9" y="32" x="19" width="14" height="2"/>
+  <rect fill="#0afcca" id="svg_10" y="37" x="12" width="4" height="2"/>
+  <rect fill="#0afcca" id="svg_11" y="37" x="19" width="14" height="2"/>
+  <rect fill="#0afcca" id="svg_12" y="42" x="12" width="4" height="2"/>
+  <rect fill="#0afcca" id="svg_13" y="42" x="19" width="14" height="2"/>
+ </g>
+</svg>

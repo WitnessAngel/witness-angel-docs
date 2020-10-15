@@ -1,0 +1,935 @@
+/* =========================================================================
+ * BASE
+ * ========================================================================= */
+
+/* HTML
+ * ------------------------------------------------------------------------- */
+
+html {
+  height: 100%;
+}
+
+/* BODY
+ * ------------------------------------------------------------------------- */
+
+body {
+  display: flex;
+
+  margin: 0;
+
+  min-width: var(--dom--min-width);
+  min-height: 100%;
+
+  flex-direction: column;
+
+  background-color: var(--color--white);
+
+  font-family: "Affogato Regular", "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 769px) {
+  body {
+    font-size: 1.4em;
+  }
+}
+
+h1 {
+  font-size: var(--font--size--up-scaled-9);
+}
+h2 {
+  font-size: var(--font--size--up-scaled-6);
+}
+h3 {
+  font-size: var(--font--size--up-scaled-4);
+}
+h4 {
+  font-size: var(--font--size--up-scaled-3);
+}
+h5 {
+  font-size: var(--font--size--standard);
+}
+h6 {
+  font-size: var(--font--size--down-scaled-2);
+}
+
+/* =========================================================================
+ * TEXT
+ * ========================================================================= */
+
+/* TEXT BASIS
+ * ------------------------------------------------------------------------- */
+
+.text {
+  display: block;
+
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+
+  line-height: 1.25;
+  white-space: normal;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+.text--oneline {
+  white-space: nowrap;
+}
+
+/* TEXT ALIGNMENTS
+ * ------------------------------------------------------------------------- */
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--justified {
+  text-align: justify;
+}
+
+/* TEXT STYLES
+ * ------------------------------------------------------------------------- */
+
+.text--light {
+  font-weight: normal;
+}
+
+.text--strong {
+  font-weight: bold;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--underlined {
+  text-decoration: underline;
+}
+
+/* TEXT TYPOGRAPHIES
+ * ------------------------------------------------------------------------- */
+
+.text--lowercase {
+  text-transform: lowercase;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* TEXT SIZES
+ * ------------------------------------------------------------------------- */
+
+.text--sized-down-6 {
+  font-size: var(--font--size--down-scaled-6);
+}
+
+.text--sized-down-5 {
+  font-size: var(--font--size--down-scaled-5);
+}
+
+.text--sized-down-4 {
+  font-size: var(--font--size--down-scaled-4);
+}
+
+.text--sized-down-3 {
+  font-size: var(--font--size--down-scaled-3);
+}
+
+.text--sized-down-2 {
+  font-size: var(--font--size--down-scaled-2);
+}
+
+.text--sized-down-1 {
+  font-size: var(--font--size--down-scaled-1);
+}
+
+.text--sized-standard {
+  font-size: var(--font--size--standard);
+}
+
+.text--sized-up-1 {
+  font-size: var(--font--size--up-scaled-1);
+}
+
+.text--sized-up-2 {
+  font-size: var(--font--size--up-scaled-2);
+}
+
+.text--sized-up-3 {
+  font-size: var(--font--size--up-scaled-3);
+}
+
+.text--sized-up-4 {
+  font-size: var(--font--size--up-scaled-4);
+}
+
+.text--sized-up-5 {
+  font-size: var(--font--size--up-scaled-5);
+}
+
+.text--sized-up-6 {
+  font-size: var(--font--size--up-scaled-6);
+}
+
+.text--sized-up-7 {
+  font-size: var(--font--size--up-scaled-7);
+}
+
+.text--sized-up-8 {
+  font-size: var(--font--size--up-scaled-8);
+}
+
+.text--sized-up-9 {
+  font-size: var(--font--size--up-scaled-9);
+}
+
+/* TEXT THEMES
+ * ------------------------------------------------------------------------- */
+
+.text--selected {
+  color: var(--color--success);
+}
+
+.text--themed--main {
+  color: var(--color--theme--main);
+}
+
+.text--themed--secondary {
+  color: var(--color--theme--secondary);
+}
+
+/* TEXT BEHAVIOURS
+ * ------------------------------------------------------------------------- */
+
+.text--unselectable {
+  cursor: default;
+  user-select: none;
+}
+
+/* TEXT WITH OTHER OPTIONS
+ * ------------------------------------------------------------------------- */
+
+label.text--label {
+}
+.text--label {
+  flex-shrink: 0;
+}
+
+.text--required::after {
+  content: " *";
+}
+
+.text--unshrinkable {
+  flex-shrink: 0;
+}
+
+/* =========================================================================
+ * PARAGRAPH
+ * ========================================================================= */
+
+.paragraph {
+  line-height: 1.5em;
+}
+
+/* =========================================================================
+ * FLEXDESIGN GRID
+ * ========================================================================= */
+
+/* FLEXDESIGN GRID
+ * ------------------------------------------------------------------------- */
+
+.fd-grid {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+body > .fd-grid {
+  flex-grow: 1;
+}
+
+/* FLEXDESIGN GRID ROW
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__row {
+  display: flex;
+
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+  flex-wrap: wrap;
+}
+
+/* FLEXDESIGN COLUMN
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__column {
+  display: flex;
+
+  position: relative;
+
+  flex-shrink: 0;
+
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+/* SPECIFIC FLEXDESIGN GRID COLUMNS
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__row--divided-1 > .fd-grid__column--filling-1 {
+  width: calc(1 * 100% / 1);
+}
+
+.fd-grid__row--divided-2 > .fd-grid__column--filling-1 {
+  width: calc(1 * 100% / 2);
+}
+
+.fd-grid__row--divided-2 > .fd-grid__column--filling-2 {
+  width: calc(2 * 100% / 2);
+}
+
+/* FLEXDESIGN ROW OPTIONS
+ * Vertically fills the remaining space
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__row--filling-rest {
+  flex-grow: 1;
+}
+
+/* FLEXDESIGN ROW OPTIONS
+ * Horizontally limits the stretching or compression
+ * ------------------------------------------------------------------------- */
+
+/* For large display, not to expand too much */
+.fd-grid__column--expansion-limited {
+  max-width: var(--grid--expansion-limited-column--max-width);
+}
+
+/* For small display, not to compress too much */
+.fd-grid__column--compression-limited {
+  min-width: var(--dom--min-width);
+}
+
+@media only screen and (max-width: 769px) {
+  .fd-grid__column--layout-responsive {
+    width: 100% !important;
+  }
+}
+
+/* FLEXDESIGN GRID ROW POSITIONS
+ * ------------------------------------------------------------------------- */
+
+/* First layout level */
+
+.fd-grid__row--positioned-static {
+  position: static;
+  z-index: 0;
+  width: 100%;
+}
+
+.fd-grid__row--positioned-fixed {
+  position: fixed;
+  z-index: 1;
+
+  width: 100%;
+  min-width: var(--dom--min-width);
+}
+
+.fd-grid__row--positioned-overlaid {
+  position: fixed;
+  z-index: 2;
+
+  width: 100%;
+  min-width: var(--dom--min-width);
+}
+
+.fd-grid__row--positioned-frontal-cover {
+  position: fixed;
+  z-index: 3;
+
+  width: 100%;
+  min-width: var(--dom--min-width);
+  height: 100%;
+}
+
+/* Second layout level */
+
+.fd-grid__row--positioned-absolute {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.fd-grid__row--positioned-static-over-absolute {
+  position: static;
+  z-index: 3;
+}
+
+.fd-grid__row--positioned-modal {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+}
+
+/* FLEXDESIGN ROW OPTIONS
+ * Sets the horizontal alignments of its children (equals to grid columns)
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__row--aligning-content-left {
+  justify-content: flex-start;
+}
+
+.fd-grid__row--aligning-content-right {
+  justify-content: flex-end;
+}
+
+.fd-grid__row--aligning-content-center {
+  justify-content: center;
+}
+
+.fd-grid__row--aligning-content-justified {
+  justify-content: space-between;
+}
+
+.fd-grid__row--aligning-content-distributed {
+  justify-content: space-around;
+}
+
+/* FLEXDESIGN ROW OPTIONS
+ * Sets the vertical alignments of its children (equals to grid columns)
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__row--aligning-items-stretched {
+  align-items: stretch;
+}
+
+.fd-grid__row--aligning-items-top {
+  align-items: flex-start;
+}
+
+.fd-grid__row--aligning-items-bottom {
+  align-items: flex-end;
+}
+
+.fd-grid__row--aligning-items-center {
+  align-items: center;
+}
+
+/* FLEXDESIGN GRID COLUMN OPTIONS
+ * Sets self vertical alignments
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__column--aligned-stretched {
+  align-self: stretch;
+}
+
+.fd-grid__column--aligned-top {
+  align-self: flex-start;
+}
+
+.fd-grid__column--aligned-bottom {
+  align-self: flex-end;
+}
+
+.fd-grid__column--aligned-center {
+  align-self: center;
+}
+
+/* FLEXDESIGN GRID COLUMN OPTIONS
+ * Sets the vertical alignments of its children (can be everything)
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__column--aligning-content-top {
+  justify-content: flex-start;
+}
+
+.fd-grid__column--aligning-content-bottom {
+  justify-content: flex-end;
+}
+
+.fd-grid__column--aligning-content-center {
+  justify-content: center;
+}
+
+.fd-grid__column--aligning-content-justified {
+  justify-content: space-between;
+}
+
+.fd-grid__column--aligning-content-distributed {
+  justify-content: space-around;
+}
+
+/* FLEXDESIGN GRID COLUMN OPTIONS
+ * Sets the horizontal alignments of its children (can be everything)
+ * ------------------------------------------------------------------------- */
+
+.fd-grid__column--aligning-items-stretched {
+  align-items: stretch;
+}
+
+.fd-grid__column--aligning-items-left {
+  align-items: flex-start;
+}
+
+.fd-grid__column--aligning-items-right {
+  align-items: flex-end;
+}
+
+.fd-grid__column--aligning-items-center {
+  align-items: center;
+}
+
+/* =========================================================================
+ * FLEXDESIGN COLLECTION
+ * ========================================================================= */
+
+/* FLEXDESIGN COLLECTIONS
+ * ------------------------------------------------------------------------- */
+
+.fd-collection--horizontal,
+.fd-collection--vertical {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.fd-collection--horizontal:not(.fd-collection--no-wrapping) {
+  flex-wrap: wrap;
+}
+
+.fd-collection--vertical {
+  flex-direction: column;
+}
+
+/* FLEXDESIGN COLLECTION ITEM
+ * ------------------------------------------------------------------------- */
+
+.fd-collection__item {
+  display: flex;
+
+  flex-shrink: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  flex-direction: column;
+}
+
+/* FLEXDESIGN COLLECTION CONTENT ALIGNMENTS
+ * ------------------------------------------------------------------------- */
+
+.fd-collection--aligning-content-justified {
+  justify-content: space-between;
+}
+
+.fd-collection--aligning-content-distributed {
+  justify-content: space-around;
+}
+
+.fd-collection--horizontal.fd-collection--aligning-content-left {
+  justify-content: flex-start;
+}
+
+.fd-collection--horizontal.fd-collection--aligning-content-center {
+  justify-content: center;
+}
+
+.fd-collection--horizontal.fd-collection--aligning-content-right {
+  justify-content: flex-end;
+}
+
+.fd-collection--horizontal > .fd-collection__item--aligned-left {
+  margin-right: auto !important;
+}
+
+.fd-collection--horizontal > .fd-collection__item--aligned-right {
+  margin-left: auto !important;
+}
+
+.fd-collection--vertical.fd-collection--aligning-content-left {
+  align-items: flex-start;
+}
+
+.fd-collection--vertical.fd-collection--aligning-content-center {
+  align-items: center;
+}
+
+.fd-collection--vertical.fd-collection--aligning-content-right {
+  align-items: flex-end;
+}
+
+/* =========================================================================
+ * IMAGE
+ * ========================================================================= */
+
+.image {
+  display: inline-flex;
+
+  max-width: 100%;
+  width: 100%; /* default value, can be overrided by your custom class */
+  height: auto; /* default value, can be overrided by your custom class */
+  max-height: 100%;
+
+  user-select: none;
+}
+
+.image > img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  user-select: none;
+}
+
+/* FIELDS AND OTHER INPUTS
+ * ------------------------------------------------------------------------- */
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+input[type="file"] {
+  overflow: hidden;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+}
+
+input[type="color"],
+input[type="range"] {
+}
+
+/* BUTTON
+ * ------------------------------------------------------------------------- */
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="image"]:hover {
+  cursor: pointer;
+}
+
+/* LINKS
+ * ------------------------------------------------------------------------- */
+
+a:hover,
+a:hover * {
+  cursor: pointer;
+}
+
+/* OTHERS
+ * ------------------------------------------------------------------------- */
+
+hr {
+  margin: 0;
+  border: none;
+}
+
+/* =========================================================================
+ * LAYOUT
+ * ========================================================================= */
+
+/* HEADER
+ * ------------------------------------------------------------------------- */
+
+.l-header {
+}
+
+.l-header__banner {
+  position: relative;
+  height: calc(400px - 2 * var(--offset--large) + var(--offset--large));
+}
+
+.l-header__banner::before {
+  content: "";
+
+  display: block;
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.5;
+  background-color: var(--color--theme--main);
+}
+
+.l-header__brand-logo-parent {
+  padding: var(--offset--large) var(--offset--x-large);
+  height: calc(400px - 2 * var(--offset--large));
+}
+
+.l-header__brand-logo {
+  width: 128px;
+}
+
+/* INTRO SECTION
+ * ------------------------------------------------------------------------- */
+
+.l-intro-section {
+  padding: var(--offset--large) var(--offset--x-large);
+  background-color: var(--color--x-lite-grey);
+}
+
+@media only screen and (max-width: 769px) {
+  .l-intro-section {
+    padding-left: var(--offset--large);
+    padding-right: var(--offset--large);
+  }
+}
+
+.l-intro-section__highlight-box {
+  display: flex;
+
+  margin-top: calc(-1 * var(--offset--x-large));
+
+  box-sizing: border-box;
+  border-bottom: var(--offset--medium) solid var(--color--theme--secondary);
+  padding: var(--offset--large);
+  min-height: 300px;
+  height: calc(100% + var(--offset--x-large));
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: var(--color--white);
+}
+
+.l-intro-section__highlight-box > *:not(:first-child) {
+  margin-top: var(--offset--large);
+}
+
+.l-intro-section__paragraph {
+  margin-left: var(--offset--x-large);
+  color: var(--color--theme--main);
+}
+
+.coming-soon {
+  margin-left: var(--offset--x-large);
+  border-left: var(--offset--medium) solid var(--color--white);
+  padding: 0 var(--offset--large);
+}
+
+@media only screen and (max-width: 769px) {
+  .l-intro-section__paragraph {
+    margin-left: unset;
+    margin-top: var(--offset--large);
+  }
+
+  .coming-soon {
+    align-self: center;
+    margin-left: unset;
+    margin: var(--offset--x-large) 0 var(--offset--large);
+  }
+}
+
+/* MAIN CONTENT
+ * ------------------------------------------------------------------------- */
+
+.l-main {
+  padding: calc(2 * var(--offset--x-large)) var(--offset--x-large);
+}
+
+@media only screen and (max-width: 769px) {
+  .l-main {
+    padding-left: var(--offset--large);
+    padding-right: var(--offset--large);
+  }
+}
+
+/* FOOTER
+ * ------------------------------------------------------------------------- */
+
+.l-footer {
+  /* border-top: var(--border--width--small) solid var(--color--white); */
+  color: var(--color--white);
+}
+
+.fd-grid__row.l-footer__banner-parent,
+.fd-grid__row.l-footer__banner-parent > .fd-grid__column {
+  height: 100%;
+}
+
+.l-footer__banner {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.l-footer__body {
+  padding: var(--offset--large) var(--offset--x-large);
+}
+
+@media only screen and (max-width: 769px) {
+  .l-footer__body {
+    padding-left: var(--offset--large);
+    padding-right: var(--offset--large);
+  }
+}
+
+.l-footer__info-fd-collection > .fd-collection__item:not(:first-child) {
+  margin-top: var(--offset--large);
+}
+
+/* =========================================================================
+ * HOME PAGE
+ * ========================================================================= */
+
+.home-arg-fd-collection {
+  margin-top: var(--offset--x-large);
+}
+
+.home-arg-fd-collection > .fd-collection__item:not(:first-child) {
+  margin-top: var(--offset--large);
+}
+
+.home-arg-fd-collection--left,
+.home-arg-fd-collection--right {
+  flex-grow: 1;
+}
+
+.home-arg-fd-collection--left {
+  margin-right: var(--offset--large);
+}
+
+.home-arg-fd-collection--right {
+  margin-left: var(--offset--x-large);
+}
+
+@media only screen and (max-width: 769px) {
+  .home-arg-fd-collection--left {
+    margin-right: unset;
+  }
+
+  .home-arg-fd-collection--right {
+    margin-left: unset;
+  }
+}
+
+.home-arg {
+  display: flex;
+}
+
+.home-arg > *:not(:first-child) {
+  margin-left: var(--offset--medium);
+}
+
+.home-arg__image {
+  width: 80px;
+  height: 80px;
+}
+
+.home-arg__text-section {
+  display: flex;
+
+  flex-grow: 1;
+  width: 0;
+
+  flex-direction: column;
+}
+
+.home-arg__text-section > *:not(:first-child) {
+  margin-top: var(--offset--medium);
+}
+
+/* TEAM SECTION
+ * ------------------------------------------------------------------------- */
+
+.l-team-section {
+  padding: calc(2 * var(--offset--x-large))
+    calc(var(--offset--x-large) - var(--offset--medium))
+    calc(2 * var(--offset--x-large) - var(--offset--medium))
+    calc(var(--offset--x-large) - var(--offset--medium));
+  background-color: var(--color--theme--main);
+  color: var(--color--white);
+}
+
+@media only screen and (max-width: 769px) {
+  .l-team-section {
+    padding-left: calc(var(--offset--large) - var(--offset--medium));
+    padding-right: calc(var(--offset--large) - var(--offset--medium));
+  }
+}
+
+.team-member-fd-collection {
+  margin-top: calc(var(--offset--x-large) - var(--offset--medium));
+}
+
+.fd-collection--horizontal.team-member-fd-collection > .fd-collection__item {
+  padding: var(--offset--medium);
+}
+
+.team-member {
+  display: flex;
+
+  width: 266px;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member > *:not(:first-child) {
+  margin-top: var(--offset--medium);
+}
+
+.team-member__photo {
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.team-member__photo > img:last-child {
+  display: none;
+}
+
+.team-member:hover > .team-member__photo > img:first-child {
+  display: none;
+}
+
+.team-member:hover > .team-member__photo > img:last-child {
+  display: block;
+}
+
+.team-member > figcaption {
+  max-width: 100%;
+}
+
+.team-member__info {
+}
+
+.team-member__info:not(:first-child) {
+  margin-top: var(--offset--small);
+}

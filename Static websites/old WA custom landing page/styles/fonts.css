@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Affogato Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AffogatoRegular.woff") format("woff");
+}
+
+.text--font-main-regular {
+  font-family: "Affogato Regular";
+}
+
+@font-face {
+  font-family: "Affogato Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AffogatoLight.woff") format("woff");
+}
+
+.text--font-main-light {
+  font-family: "Affogato Light";
+}
+
+@font-face {
+  font-family: "Affogato Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AffogatoMedium.woff") format("woff");
+}
+
+.text--font-main-medium {
+  font-family: "Affogato Medium";
+}
+
+@font-face {
+  font-family: "Affogato Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AffogatoBold.woff") format("woff");
+}
+
+.text--font-main-bold {
+  font-family: "Affogato Bold";
+}
+
+@font-face {
+  font-family: "Affogato Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AffogatoBlack.woff") format("woff");
+}
+
+.text--font-main-x-bold {
+  font-family: "Affogato Black";
+}
+
+@font-face {
+  font-family: "Corporate Rounded Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CorporateRoundedRegular.ttf") format("truetype");
+}
+
+.text--font-secondary-regular {
+  font-family: "Corporate Rounded Regular";
+}
+
+@font-face {
+  font-family: "Corporate Rounded Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CorporateRoundedBold.ttf") format("truetype");
+}
+
+.text--font-secondary-bold {
+  font-family: "Corporate Rounded Bold";
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: "Corporate Rounded Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CorporateRoundedOblique.ttf") format("truetype");
+}
+
+.text--font-secondary-italic {
+  font-family: "Corporate Rounded Oblique";
+}
+
+@font-face {
+  font-family: "Corporate Rounded Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CorporateRoundedBoldOblique.ttf") format("truetype");
+}
+
+.text--font-secondary-bold-italic {
+  font-family: "Corporate Rounded Bold Oblique";
+}
